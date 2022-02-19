@@ -6,15 +6,15 @@
   },
   "inbounds": [
     {
-      "port": 30909,
+      "port": 65035,
       "listen": "0.0.0.0",
       "protocol": "vmess",
       "settings": {
         "clients": [
           {
-            "id": "bae399d4-13a4-46a3-b144-4af2c0004c2e",
+            "id": "9edc92b8-41d5-478f-9387-9b48947d6508",
             "level": 1,
-            "alterId": 64
+            "alterId": 0
           }
         ]
       },
