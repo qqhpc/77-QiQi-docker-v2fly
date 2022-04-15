@@ -36,21 +36,17 @@ git clone https://github.com/77-QiQi/docker-v2ray.git
 
 进入docker-v2ray目录开始修改配置。
 
-**1) `init-letsencrypt.sh`** 将里面的domains和email修改为自己的域名和邮箱。
+**1) `info.conf`** 请于此文件内设置域名及邮箱，并修改<a href="https://www.uuidgenerator.net/" target="_blank">UUID</a> alterId 及path。
 
 **2) `docker-compose.yml`** 可以不用动。
-
-**3) `data/v2ray/config.json`** 修改<a href="https://www.uuidgenerator.net/" target="_blank">UUID</a> alterId 及path
-
-**4) `data/nginx/conf.d/v2ray.conf`** 修改所有your_domain为自己的域名，如果前面v2ray配置文件没多做修改，则除域名之外的也不用修改其他地方。
 
 
 ## 6. 添加执行权限并执行一键部署
 
 ```
-chmod +x ./init-letsencrypt.sh
+chmod +x ./install.sh
 
-./init-letsencrypt.sh
+./install.sh
 ```
 
 
@@ -62,7 +58,7 @@ chmod +x ./init-letsencrypt.sh
 
 ### NGINX可能会选择设置的：
 
-以下命令行将为您提供一个nginx容器内的bash shell
+以下命令行将为您提供一个NGINX容器内的bash shell
 ```
 docker exec -it nginx bash
 ```
