@@ -95,3 +95,5 @@ mv ./data/nginx/conf.d/v2ray.conf.bak ./data/nginx/conf.d/v2ray.conf
 
 echo "### Reloading nginx ..."
 docker-compose exec nginx nginx -s reload
+
+echo "### 后期更新TLS证书，请重新执行 ./install.sh 命令 ..."
