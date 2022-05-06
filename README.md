@@ -34,9 +34,9 @@ git clone https://github.com/77-QiQi/docker-v2fly.git
 
 ## 5. 修改v2ray配置
 
-进入docker-v2ray目录开始修改配置。
+进入docker-v2fly目录开始修改配置。
 
-**1) `info.conf`** 请于此文件内设置域名及邮箱，并修改 <a href="https://www.uuidgenerator.net/" target="_blank">UUID</a> 和 path 。
+**1) `info.conf`** 请于此文件内设置**域名**及**邮箱**，并**修改 <a href="https://www.uuidgenerator.net/" target="_blank">UUID</a> 和 path 。**
 
 **2) `docker-compose.yml`** 可以不用动。
 
