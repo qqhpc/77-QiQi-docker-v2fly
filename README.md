@@ -28,7 +28,7 @@ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 ```
 apt-get install git
 
-git clone https://github.com/77-QiQi/docker-v2ray.git
+git clone https://github.com/77-QiQi/docker-v2fly.git
 ```
 
 
