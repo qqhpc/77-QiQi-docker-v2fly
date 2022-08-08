@@ -13,7 +13,15 @@ sh get-docker.sh
 
 
 ## 3. 安装docker-compose
-**v2.5.0 版本**
+**v2.9.0 版本**
+```
+sudo curl -SL https://github.com/docker/compose/releases/download/v2.9.0/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
+
+sudo chmod +x /usr/local/bin/docker-compose
+
+sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+```
+**v2.5.0 版本（已安装 v2.9.0 版本，可忽略）**
 ```
 sudo curl -SL https://github.com/docker/compose/releases/download/v2.5.0/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
 
@@ -21,7 +29,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 
 sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 ```
-**已安装 v2.5.0 版本，可忽略下方 1.29.2 版本**
+**1.29.2 版本（已安装 v2.9.0 版本，可忽略）**
 ```
 sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 
@@ -34,7 +42,7 @@ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 ## 4. 安装git并clone代码
 
 ```
-apt-get install git
+apt-get install git -y
 
 git clone https://github.com/77-QiQi/docker-v2fly.git
 ```
